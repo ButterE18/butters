@@ -5,8 +5,44 @@
     </head>
     <body>
         <h1>Why cookies are amazing</h1>
-        <p>The taste!</p>
+        <p>
+            The taste!
+        </p>
         <button id="btnAlert"onClick="alert('sike! no cookies for you tehe');">
-        Click for cookies!</button>
+        Click for cookies!
+    </button>
+        <p>
+            Countdown: <span id="Final Countdown"> ITS TIME!!!</span>
+            <!-- This is an HTML comment-->
+        </p>
     </body>
 </html>
+
+<script>
+
+//alert("WOAH THERE PARTHER!");
+
+thisClass = "CSC102";
+
+//alert(thisClass); 
+
+meaningOfLife = 42;
+Greatyear = 89;
+
+total = meaningOfLife + Greatyear;
+
+//alert(total);
+
+currTime = 50;
+var Timeout = 5000;
+
+let x = document.getElementById("FinalCountdown");
+
+setTimeout(function(){
+    x.innerHTML = currTime
+    currTime = currTime - 5;
+}, Timeout);
+Timeout = Timeout + 1000;
+
+
+</script>
