@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>COOKIES</title>
+        <script src="Code.js"></script> <!--This is how we acess the js file! -->
     </head>
     <body style="background-color: rgb(255, 0, 200);">
         <h1 style="color:cornflowerblue">Why cookies are amazing</h1>
@@ -30,70 +31,8 @@
     
     //alert(total);
     
-    var currTime = 50;
-    var Timeout = 5000;
-    
     let x = document.getElementById("FinalCountdown");
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-    }, Timeout);
-    Timeout = Timeout + 1000;
-    setTimeout(function(){
-    alert('SIKE, Still no cookies for you, lmao XD!');
-    }, Timeout);
-
+    runTimer(x);
     </script>
         </p>
     </body>
