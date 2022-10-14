@@ -23,3 +23,29 @@ for(i=0;i<11;i++){
     Timeout = Timeout + 1000;
     }
 }    
+
+function getInput() {
+
+do{
+    Firstname = prompt("GIVE ME FIRST NAME PWEASE:");
+    Lastname = prompt("GIVE ME LAST NAME NOW PWEASE:");
+
+    Fullname = Firstname + " " + Lastname; 
+        if(Fullname.length > 20){
+            alert("YOUR NAME IS TOO BIG, CHANGE IT PWEASE");
+        }
+}
+while(Fullname.length > 20);
+
+do{
+    BadgeHashtag = prompt("TYPE IN SPECIALIZED NUMERO PWEASE:");
+
+    if(BadgeHashtag > 1000){
+        alert("ERROR DOES NOT COMPUTE LMAO");
+    }
+}
+while(BadgeHashtag > 1000);
+
+
+
+}
