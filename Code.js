@@ -24,6 +24,16 @@ function runTimer(x){ //This function runs on the countdown
        }
    }    
    
+function startbuttonclick(){
+    document.getElementById("btnStart").disabled = true; //when start is pressed, start turns off
+    document.getElementById("btnStop").disabled = false; //when start is pressed, stop turns on
+}
+
+function stopbuttonclick(){
+    document.getElementById("btnStart").disabled = false; //INVERSE PROPERTY
+    document.getElementById("btnStop").disabled = true; //INVERSE PROPERTY
+}
+
    function getInput() { 
    
    do{
