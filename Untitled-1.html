@@ -8,20 +8,38 @@
         <h1 style="color:cornflowerblue">Why cookies are amazing</h1>
         <img src="https://th.bing.com/th/id/R.418ba897429a9b73022c782d4e366b87?rik=9CYBeTFZRTYWvw&riu=http%3a%2f%2fwww.clatapult.com%2fwp-content%2fuploads%2f2017%2f04%2fCookie.gif&ehk=GL211Wi3PShQqjHdJUTLB48E%2b%2bCKJ3aSbjWhqKn07fU%3d&risl=&pid=ImgRaw&r=0" width="250" height="250">
         <strong style="color:rgb(103, 51, 247)" >
-            The taste! The smell! The toppings!
+            The taste! The snell! The toppings!
         </strong>
         <button id="btnAlert"onClick="alert('sike! no cookies for you tehe');">
         Click for cookies!</button>
-    <br>
-        <input type="button" id="btnStart" value="Start" onclick="startbuttonclick();"> <!--This is the start button -->
-        <input type="button" id="btnStop" value="Stop" disabled="true" onclick="stopbuttonclick();"> <!--This is the stop button-->
+        <br><button id="btnAlert" onclick="alert('TBD');"> Starting</button> <!--This is the start button -->
+        <br><button id="btnAlert" onclick="alert('TBD');"> Stopping</button> <!--This is the stop button-->
         <p style="color:rgb(0, 183, 255)">
             Cookies in: <span id="FinalCountdown"> #Soon</span>
 
+        <audio controls>
+            <source scr = "Sad_Trombone-Joe_Lamb-665429450" type = "audio/mpeg"> <!--This is our audio file of a sad trombone-->
+        </audio>
+
     <script>
+    
+    //alert("WOAH THERE PARTHER!");
+    
+    thisClass = "CSC102";
+    
+    //alert(thisClass); 
+    
+    var meaningOfLife = 42;
+    var Greatyear = 89;
+    
+    total = meaningOfLife + Greatyear;
+    
+    //alert(total);
+    
+    getInput();
 
-    getInput(); //This is is the fuction that calls for the Input function within the js file
-
+    let x = document.getElementById("FinalCountdown");
+    runTimer(x); //This is the function that runs the timer in the js file
     </script>
         </p>
     </body>
