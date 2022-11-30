@@ -4,13 +4,15 @@
         <title>COOKIES</title>
         <script src="Code.js"></script> <!--This is how we acess the js file! -->
 
-        <style>
+        <!--This is our customization for the table -->
+        <style>  
             table,th,td{
                 border: 1px solid black;
                 padding: 10px;
                 background-color: chartreuse;
             }
         </style>
+        
     </head>
     <body style="background-color: rgb(255, 0, 200);">
         <h1 style="color:cornflowerblue">Why cookies are amazing</h1>
@@ -30,16 +32,31 @@
             <source src = "Sad_Trombone-Joe_Lamb-665429450.mp3" type = "audio/mpeg"> <!--This is our audio file of a sad trombone-->
         </audio>
 
+    <body onload="startTime()">
+        <h2>The time is </h2>
     <script>
 
     getInput(); //This is is the fuction that calls for the Input function within the js file
 
-    <div id = "txt"></div>
-
     </script>
 
-    <script>
+    <div id = "txt"></div>
 
+    <script>
+    function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" +1}; //adds a zero in front of the numbers that are less than 10
+        return i;
+    }
     </script>
     <table id="data" width=100%>  <!-- This is the creation of the table-->
         <thead>
